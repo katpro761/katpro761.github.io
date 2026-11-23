@@ -60,6 +60,18 @@ a:hover{text-decoration:underline}
 .hero h1{font-size:clamp(38px,6vw,72px);margin:14px 0 18px;color:var(--paper)}
 .hero h1 span{color:var(--accent)}
 .hero p{max-width:720px;color:var(--muted);font-size:18px}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:22px;padding:13px 22px;border-radius:999px;
+  background:linear-gradient(180deg,#c14633,#9c2f22);
+  color:#fff;font-weight:600;font-size:16px;letter-spacing:.02em;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 8px 24px rgba(180,57,42,.35);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 12px 28px rgba(180,57,42,.45)}
+.btn svg{width:18px;height:18px;fill:currentColor;opacity:.95}
 .hero .years{font-family:Georgia,serif;font-size:clamp(60px,12vw,150px);line-height:.9;color:rgba(217,178,106,.10);position:absolute;right:-10px;bottom:-10px;pointer-events:none;white-space:nowrap}
 
 /* sections */
@@ -172,6 +184,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="kicker">Справочник · Великая Отечественная</div>
     <h1>Война, которая<br>изменила <span>всё</span></h1>
     <p>22 июня 1941 года началась Великая Отечественная война — самая кровопролитная в истории нашей страны. Четыре года, 1418 дней и ночей, миллионы судеб. Здесь — хроника, ключевые битвы и цифры, которые нельзя забывать.</p>
+    <a class="btn" href="https://vk.com/donut/zov_svodki" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.6-9A5.4 5.4 0 0 1 12 6.2 5.4 5.4 0 0 1 21.6 12c-2.1 4.3-9.6 9-9.6 9z"/></svg>
+      Поддержать проект
+    </a>
     <div class="years">1941—1945</div>
   </div>
 </header>
@@ -377,7 +393,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>Справочник о Великой Отечественной войне 1941–1945</span>
-    <span>Сохранение памяти — наша общая задача</span>
+    <span><a href="https://vk.com/donut/zov_svodki" target="_blank" rel="noopener">Поддержать проект</a> · сохранение памяти — наша общая задача</span>
   </div>
 </footer>
 
